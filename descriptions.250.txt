@@ -1,0 +1,69 @@
+anion exchange protein 3
+basement membrane-specific heparan sulfate proteoglycan core protein-like
+calpain-C
+coatomer subunit gamma-2-like
+coiled-coil domain-containing protein AGAP005037
+cytosol aminopeptidase-like
+description
+discoidin domain-containing receptor 2-like
+dual specificity calcium/calmodulin-dependent 3',5'-cyclic nucleotide phosphodiesterase 1C-like
+E3 ubiquitin-protein ligase highwire-like
+esterase SG1-like
+flightin
+glycosyltransferase 25 family member
+homeobox protein ESX1-like
+lipase 3-like
+muscle M-line assembly protein unc-89
+palmitoyltransferase ZDHHC16
+pancreas transcription factor 1 subunit alpha
+paraplegin
+PDF receptor-like
+peptide transporter family 1-like
+period circadian protein
+potassium voltage-gated channel protein Shaker
+protein bric-a-brac 1-like
+protein grindelwald
+protein NDRG3
+protein scabrous
+ribosome quality control complex subunit TCF25-like
+sodium- and chloride-dependent glycine transporter 1-like
+solute carrier family 15 member 1-like
+solute carrier family 15 member 2-like
+solute carrier family 35 member B1 homolog
+SPARC-related modular calcium-binding protein 1
+THAP domain-containing protein 3-like
+THAP domain-containing protein 5-like
+titin
+tyrosine-protein kinase Abl
+tyrosine-protein phosphatase corkscrew-like
+uncharacterized LOC135086475
+uncharacterized LOC135086483
+uncharacterized LOC135086607
+uncharacterized LOC135086621
+uncharacterized LOC135086755
+uncharacterized LOC135086802
+uncharacterized LOC135086816
+uncharacterized LOC135086854
+uncharacterized LOC135086872
+uncharacterized LOC135086886
+uncharacterized LOC135086887
+uncharacterized LOC135086888
+uncharacterized LOC135086892
+uncharacterized LOC135086933
+uncharacterized LOC135086935
+uncharacterized LOC135086959
+uncharacterized LOC135086969
+uncharacterized LOC135086980
+uncharacterized LOC135087013
+uncharacterized LOC135087023
+uncharacterized LOC135087117
+uncharacterized LOC135087146
+uncharacterized LOC135087159
+uncharacterized LOC135087164
+uncharacterized LOC135087190
+uncharacterized LOC135087191
+uncharacterized LOC135087193
+uncharacterized LOC135087197
+uncharacterized LOC135087201
+uncharacterized LOC135087250
+V-type proton ATPase 116 kDa subunit a 1-like

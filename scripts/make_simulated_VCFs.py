@@ -5,11 +5,14 @@ import sys
 
 migRate = sys.argv[1]
 gen = sys.argv[2]
+noDel = False 
+if len(sys.argv) > 3:
+    noDel = bool(sys.argv[3])
 
 inferencePipeline = likelihoodCalcs.LikelihoodInference_jointSFS()
 
 # read and write pickle data
-inferencePipeline.make_composite_VCF(migRate, gen)
+inferencePipeline.make_composite_VCF(migRate, gen, noDel = noDel)
 
 """
 

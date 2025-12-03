@@ -26,7 +26,7 @@ annot[(1490000,1500000)] = "bg"
 for gen in (3000,3180,3300):
     for coords in [(990000,1000000),(1490000,1500000)]:
         sfs[annot[coords]][gen] = [0 for i in range(20)]  
-        with gz.open("slim_sims/LHU_sims/simulations_LHU/vcfs_dadiparams/migRate.0.01."+str(gen)+".vcf.gz", 'rt') as f:
+        with gz.open("slim_sims/LHU_sims/simulations_LHU/vcfs_dadiparams_noDel/migRate.0.01."+str(gen)+".vcf.gz", 'rt') as f:
             for line in f:
                 if line[0] == "#":
                     continue

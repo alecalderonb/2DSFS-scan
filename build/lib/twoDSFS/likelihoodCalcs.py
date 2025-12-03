@@ -35,12 +35,16 @@ class LikelihoodInference_jointSFS():
         self.regen = regen
         self.sim_back = sim_back
  
-    def make_composite_VCF(self, migRate, gen):
+    def make_composite_VCF(self, migRate, gen, noDel=False):
  
         # given a directory with simulated VCF files, combine them into one VCF with all the data to run the analysis
  
-        migDir = "slim_sims/LHU_sims/simulations_LHU/vcfs_dadiparams/migRate."+str(migRate)+"/"
-        outFile = "slim_sims/LHU_sims/simulations_LHU/vcfs_dadiparams/migRate."+str(migRate)+"."+str(gen)+".vcf.gz"
+        delString = ""
+        if noDel:
+            delString = "_noDel"   
+ 
+        migDir = "slim_sims/LHU_sims/simulations_LHU/vcfs_dadiparams"+delString+"/migRate."+str(migRate)+"/"
+        outFile = "slim_sims/LHU_sims/simulations_LHU/vcfs_dadiparams"+delString+"/migRate."+str(migRate)+"."+str(gen)+".vcf.gz"
 
         print_header = True
         out =  gzip.open(outFile, 'wt')
@@ -177,6 +181,7 @@ class LikelihoodInference_jointSFS():
                 pickle.dump(data_dict, file)
 
         return data_dict
+
 
     def calculate_2d_sfs(self, data_dict):
         """
@@ -509,8 +514,8 @@ class LikelihoodInference_jointSFS():
         chromosome_snps = {}
         # make the background SNPs, only inlcude snps on the same chromosome 
         for snp_key, snp_data in data_dict.items():
-            if snp_key.startswith(f"{chrom}-"):
-                chromosome_snps[snp_key] = snp_data
+            #if snp_key.startswith(f"{chrom}-"):
+            chromosome_snps[snp_key] = snp_data
          
         # limit the bg to a specific subset of positions for the simulations        
         bg_snps = {}
@@ -524,7 +529,7 @@ class LikelihoodInference_jointSFS():
             bg_snps = chromosome_snps     
 
         background_2d_sfs = self.calculate_2d_sfs(bg_snps)
- 
+
         T2D_windows = {}
         current_chromosome = None
         current_window_start = 0
@@ -543,7 +548,7 @@ class LikelihoodInference_jointSFS():
             # check if the SNP is on the current chromosome
             if chr_pos[0] != current_chromosome:
                 foreground_2d_sfs = self.calculate_2d_sfs(window_data)
-                print(foreground_2d_sfs)
+                #print(foreground_2d_sfs)
                 T2D = self.calculate_likelihood_2D(foreground_2d_sfs, background_2d_sfs)
                 snp_count = self.count_snps(window_data, self.variant_type)
                 window_range = f"{current_chromosome} {current_window_start} {pos}"

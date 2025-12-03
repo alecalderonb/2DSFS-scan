@@ -19,7 +19,7 @@ tabix -f -p vcf slim_vcfs/migRate.${migRate}.${gen}.vcf.gz
 cat sim_likelihood_calcs/migRate.${migRate}.${gen}.ll | awk '{if(int($2) == int($3)) {print $1"\t"int($2)"\t"int($3)+1} else {print $1"\t"int($2)"\t"int($3)}}' > slim_vcfs/migRate.${migRate}.${gen}.bed
 
 # run pixy 
-pixy --stats fst --vcf slim_vcfs/migRate.${migRate}.${gen}.vcf.gz --populations popmap.pixy.txt --bed_file slim_vcfs/migRate.${migRate}.${gen}.bed --output_folder sim_likelihood_calcs  --output_prefix migRate.${migRate}.${gen} --bypass_invariant_check
+pixy --stats fst --vcf slim_vcfs/migRate.${migRate}.${gen}.vcf.gz --populations data/popmap.pixy.txt --bed_file slim_vcfs/migRate.${migRate}.${gen}.bed --output_folder sim_likelihood_calcs  --output_prefix migRate.${migRate}.${gen} --bypass_invariant_check
 
 
 

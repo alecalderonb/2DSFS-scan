@@ -1,0 +1,51 @@
+1-acyl-sn-glycerol-3-phosphate acyltransferase gamma-like
+ATP-binding cassette sub-family G member 4
+basic-leucine zipper transcription factor A-like
+calcium/calmodulin-dependent protein kinase type II alpha chain-like
+chromatin modification-related protein MEAF6
+cuticle protein 7-like
+cysteine sulfinic acid decarboxylase
+description
+flexible cuticle protein 12-like
+formylglycine-generating enzyme
+GATA-binding factor C-like
+gonadal protein gdl
+histidine-rich glycoprotein-like
+histone-lysine N-methyltransferase 2D-like
+integrin alpha-8
+multiple C2 and transmembrane domain-containing protein-like
+myeloid leukemia factor
+osteopetrosis-associated transmembrane protein 1
+peroxisome biogenesis factor 2
+PR domain zinc finger protein 1
+programmed cell death protein 2
+protein lin-28 homolog
+protein stunted
+pupal cuticle protein Edg-84A-like
+roundabout homolog 1-like
+serine/threonine-protein kinase RIO1
+sterol carrier protein 2
+traB domain-containing protein-like
+transmembrane protein 242
+tRNA N6-adenosine threonylcarbamoyltransferase, mitochondrial-like
+tRNA-dihydrouridine(20a/20b) synthase [NAD(P)+]-like
+uncharacterized histidine-rich protein DDB_G0274557-like
+uncharacterized LOC135071069
+uncharacterized LOC135071072
+uncharacterized LOC135071074
+uncharacterized LOC135071096
+uncharacterized LOC135071099
+uncharacterized LOC135071106
+uncharacterized LOC135071126
+uncharacterized LOC135071128
+uncharacterized LOC135071138
+uncharacterized LOC135071182
+uncharacterized LOC135071512
+uncharacterized LOC135073795
+uncharacterized LOC135073939
+uncharacterized LOC135078537
+uncharacterized LOC135078538
+uncharacterized LOC135078988
+uncharacterized LOC135079015
+very long chain fatty acid elongase AAEL008004-like
+zinc finger protein 583-like
