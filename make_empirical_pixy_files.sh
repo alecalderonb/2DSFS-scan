@@ -9,5 +9,4 @@
 
 #for n in {250,500,1000,2000}; do pixy --stats fst --vcf data/vcf/ECBAnnotated_biallelic.pruned.r2_0.5.10kb.vcf.gz --populations  data/popmap.noUnder.txt --bed_file data/T2D.${n}.bed --output_folder data/ECB_pixy  --output_prefix ECB.${n} --bypass_invariant_check; done
 
-pixy --stats fst --vcf data/vcf/ECBAnnotated_biallelic.pruned.r2_0.5.10kb.vcf.gz --populations  data/popmap.noUnder.txt --bed_file data/T2D.2000.bed --output_folder data/ECB_pixy  --output_prefix ECB.2000 --bypass_invariant_check
 
