@@ -1,0 +1,21 @@
+dbt  9:7863568-7872008 235.2 -2.81e-4 Y Kanehisa et al. 2025
+period Z:9364347-9445397 576.0 9.07e-2 Y Kanehisa et al. 2025
+sgg  14:7649719-76783 262.7 1.03e-2 Y Kanehisa et al. 2025
+ataxin-2  22:2169285-2202541 268.2 2.77e-3 Y Kanehisa et al. 2025
+vrille  25:3809088-3819150 228.1 1.72e-3 Y Kanehisa et al. 2025
+CLOCK Z:10508785-10538156 364.8 6.79e-2 Y Kanehisa et al. 2025
+LSM12 28:6992657-6997706 235.5 5.8e-3 Y Kanehisa et al. 2025
+HLF  Z:92744-299662 290.6 1.44e-3 Y Kanehisa et al. 2025
+timeless 3:11490981-11518928 275.7 2.50e-2 Y Kanehisa et al. 2025
+cycle Z:321298-431553 332.5 3.23e-2 Y Kanehisa et al. 2025
+cwo  4:2642025-2680557 275.5 2.04e-2 Y Kanehisa et al. 2025
+trissin-receptor 3:9014788-9073968 338.7 1.79e-2 N Sekiguchi et al. 2024
+dSOR1 16:10982650-10993552 259.6 1.03e-2 N Wang et al. 2020
+nej  7:14442873..14447996 246.0 1.46e-2 N Wang et al. 2020
+nmo  5:14324275-14484021 236.8 3.65e-3 N Wang et al. 2020
+CKIIα  1:9752028..9761721 251.3 1.49e-2 N Wang et al. 2020
+p38b 1:14092436..14099844 232.1 8.29e-3 N Wang et al. 2020
+gish  16:10406601-10446841 299.4 9.88e-3 N Wang et al. 2020
+Rho1  17:8986029-8987389 312.3 1.78e-2 N Petsakou et al. 2015
+cullin-3 3:8872245-8892614 265.6 -4.85e-3 N Grima et al. 2012
+PRL-1 1:15298445-15327032 365.2 1.85e-2 N Kula-Eversole et al.2021

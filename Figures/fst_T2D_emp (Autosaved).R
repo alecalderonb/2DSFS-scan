@@ -144,5 +144,5 @@ plCoding<-plCoding+# Add the arrow (segment with an arrowhead)
 
 
 
-ggsave("~/projects/2DSFS-scan/Figures/FST_T2D_coding_250.pdf",height=6/1.5,width=10/1.5)
+ggsave("~/projects/2DSFS-scan/Figures/FST_T2D_coding_250.pdf",height=4/1.5,width=10/1.5)
 
