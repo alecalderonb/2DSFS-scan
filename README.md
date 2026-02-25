@@ -3,7 +3,11 @@ Python scripts for inference of genomic divergence between populations using the
 
 ## Code
 
-To compile our code for calculating T2D, run `python setup.py` from the top-level directory. The main source code is contained in `src/twoDSFS/likelihoodCalcs.py`.
+To compile our code for calculating T2D, run `python setup.py` from the top-level directory. The main source code is contained in `src/twoDSFS/likelihoodCalcs.py`. Simulation scripts are found in `slim_sims/stabSelGrad_model/simulations_LHU/StabSel_dadiparams_LHU.slim` and `slim_sims/stabSelGrad_model/simulations_LHU/StabSel_dadiparams_LHU.noDel.slim`.
+
+## Data
+
+VCF files for ECB empirical data (including pruned files and annotated coding sites) are found in `data/vcf/`. A population map for these files can be found in `data/popmap.txt`.
 
 ## Figures
 
