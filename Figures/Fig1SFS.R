@@ -8,7 +8,7 @@ plC<-ggplot(sfs[sfs$V2 == 3000,],aes(V3,V4,fill=V1))+theme_classic()+geom_bar(st
 plD<-ggplot(sfs[sfs$V2 == 3300,],aes(V3,V4,fill=V1))+theme_classic()+geom_bar(stat="identity",position="dodge")+xlim(c(0.5,5))+xlab("allele count")+ylab("Density")+scale_fill_manual(values=wes_palette("Moonrise3"),name="",labels=c("background","foreground"))+theme(text = element_text(size=14))
 
 read_csvs<-function(iter) {
-    connection <- gzfile(paste("~/projects/2DSFS-scan/slim_sims/LHU_sims/simulations_LHU/vcfs_dadiparams/migRate.0.01/iter_",iter,"/sim_log.",iter,".txt.gz",sep=""), "rt") # "rt" for read text mode
+    connection <- gzfile(paste("~/projects/2DSFS-scan/slim_sims/stabSelGrad_model/simulations_LHU/vcfs_dadiparams/migRate.0.01/iter_",iter,"/sim_log.",iter,".txt.gz",sep=""), "rt") # "rt" for read text mode
     data <- read.csv(connection, header = TRUE)
     data<-cbind(data,data.frame(i=rep(iter,length(data$cycle))))
     close(connection)
@@ -42,13 +42,13 @@ plBottomRow<-plot_grid(plC,plD,labels=c("C","D"),rel_widths=c(1,1.4 ))
 
 plot_grid(plTopRow,plBottomRow,ncol=1)
 
-ggsave("~/projects/2DSFS-scan/Figures/Fig1.pdf",width=10,height=7)
+ggsave("~/projects/2DSFS-scan/Figures/Fig2.pdf",width=10,height=7)
 
 # supp figure of different migration rates
 
 
 read_csvs_mig<-function(iter,mig) {
-  connection <- gzfile(paste("~/projects/2DSFS-scan/slim_sims/LHU_sims/simulations_LHU/vcfs_dadiparams/migRate.",as.character(mig),"/iter_",iter,"/sim_log.",iter,".txt.gz",sep=""), "rt") # "rt" for read text mode
+  connection <- gzfile(paste("~/projects/2DSFS-scan/slim_sims/stabSelGrad_model/simulations_LHU/vcfs_dadiparams/migRate.",as.character(mig),"/iter_",iter,"/sim_log.",iter,".txt.gz",sep=""), "rt") # "rt" for read text mode
   data <- read.csv(connection, header = TRUE)
   data<-cbind(data,data.frame(i=rep(iter,length(data$cycle))))
   close(connection)
@@ -166,12 +166,10 @@ plMigSDWithDel<-ggplot(dataAll,aes(cycle-3000,SD,color=as.factor(mig)))+
   scale_color_manual(values=wes_palette("AsteroidCity1"),name="migration rate")+theme(legend.position = "none")
 
 
-
 # supp figure of different migration rates, no del
 
-
 read_csvs_mig<-function(iter,mig) {
-  connection <- gzfile(paste("~/projects/2DSFS-scan/slim_sims/LHU_sims/simulations_LHU/vcfs_dadiparams_noDel/migRate.",as.character(mig),"/iter_",iter,"/sim_log.",iter,".txt.gz",sep=""), "rt") # "rt" for read text mode
+  connection <- gzfile(paste("~/projects/2DSFS-scan/slim_sims/stabSelGrad_model/simulations_LHU/vcfs_dadiparams_noDel/migRate.",as.character(mig),"/iter_",iter,"/sim_log.",iter,".txt.gz",sep=""), "rt") # "rt" for read text mode
   data <- read.csv(connection, header = TRUE)
   data<-cbind(data,data.frame(i=rep(iter,length(data$cycle))))
   close(connection)
@@ -274,7 +272,6 @@ plot_grid(pl0p0,pl0p01,pl0p05,pl0p1,pl0p2,ncol=1)
 ggsave("~/projects/2DSFS-scan/Figures/FigPMeanFst_noDel.pdf",width=8.5*1.3,height=11*1.3)
 
 # figure of change in genetic variance over time
-
 
 data_mig0.0<-cbind(data_mig0.0,data.frame(mig=rep(0.0,length(data_mig0.0$cycle))))
 data_mig0.01<-cbind(data_mig0.01,data.frame(mig=rep(0.01,length(data_mig0.01$cycle))))

@@ -8,13 +8,14 @@ read.table("~/projects/2DSFS-scan/data/power.ll")->pow
 
 plA<-ggplot(pow, aes(V2-3000,V3,group=V1,col=as.factor(V1))) + geom_smooth(method = "glm", 
                                                                            method.args = list(family = "binomial"), 
-                                                                           se = FALSE) + geom_point(alpha=0.3) + theme_classic() + xlab("Generations from split") + ylab(expression("power, " * alpha * " = 5e-3"))  +  ylim(c(0,1))+ scale_color_manual(values=wes_palette("Darjeeling1"),name="migration rate")+theme(legend.position = "none")
+                                                                           se = FALSE) + geom_point(alpha=0.3) + theme_classic() + xlab("Generations from split") + ylab(expression("power, " * alpha * " = 5e-3"))  +  ylim(c(0,1))+ scale_color_manual(values=wes_palette("Darjeeling1"),name="migration rate")+theme(legend.position = "none")+geom_hline(yintercept = 0.8,lty=3)
+)
 
 read.table("~/projects/2DSFS-scan/data/power.fst")->pow2
 
 plB<-ggplot(pow2, aes(V2-3000,V3,group=V1,col=as.factor(V1))) + geom_smooth(method = "glm", 
                                                                            method.args = list(family = "binomial"), 
-                                                                           se = FALSE) + geom_point(alpha=0.3) + theme_classic() + xlab("Generations from split") + ylab(expression("power, " * alpha * " = 5e-3"))  +  ylim(c(0,1))+ scale_color_manual(values=wes_palette("Darjeeling1"),name="migration rate")
+                                                                           se = FALSE) + geom_point(alpha=0.3) + theme_classic() + xlab("Generations from split") + ylab(expression("power, " * alpha * " = 5e-3"))  +  ylim(c(0,1))+ scale_color_manual(values=wes_palette("Darjeeling1"),name="migration rate")+geom_hline(yintercept = 0.8,lty=3)
 
 
 plot_grid(plA,plB,labels=c("A","B"),rel_widths=c(1,1.3))
@@ -66,6 +67,7 @@ plA<-ggplot(comp,aes(l,f,col=as.factor(posFac)))+geom_point()+theme_classic()+yl
 plA<-plA+geom_hline(yintercept=fstThresh,lty=3)
 plA<-plA+geom_vline(xintercept=llThresh,lty=3)+theme(legend.position = "none")
 
+cor.test(comp$l,comp$f)
 
 # now a later generation 
 
@@ -96,6 +98,8 @@ plB<-ggplot(comp,aes(l,f,col=as.factor(posFac)))+geom_point()+theme_classic()+yl
   scale_color_manual(values=wes_palette("AsteroidCity1"),name="Selection regime")
 plB<-plB+geom_hline(yintercept=fstThresh,lty=3)
 plB<-plB+geom_vline(xintercept=llThresh,lty=3)
+
+cor.test(comp$l,comp$f)
 
 plot_grid(plA,plB,rel_widths = c(1,1.4),labels=c("A","B"))
 
