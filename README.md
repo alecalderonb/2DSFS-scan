@@ -8,18 +8,18 @@ To compile our code for calculating T2D, run `python setup.py` from the top-leve
 ## Figures
 
 ### Figure 1
-To generate Figure 1, run the R script Figures/
+To generate Figure 1, run the R script `Figures/`
 
 ### Figure 2
-To generate Figure 2, run the R script Figures/Fig1SFS.R 
+To generate Figure 2, run the R script `Figures/Fig1SFS.R` 
 
 ### Figures 3 and 4
-To generate Figures 3 and 4, run the R script Figures/power.R
+To generate Figures 3 and 4, run the R script `Figures/power.R`
 
 ## Figure 5
-To generate Figure 5, run the R script Figures/
+To generate Figure 5, run the R script `Figures/`
 
 ## Figure 6
-To generate Figure 6, run the R script Figures/
+To generate Figure 6, run the R script `Figures/fst_T2D_emp.R`
 
 
