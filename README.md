@@ -7,7 +7,7 @@ To compile our code for calculating T2D, run `python setup.py` from the top-leve
 
 ## Data
 
-VCF files for ECB empirical data (including pruned files and annotated coding sites) are found in `data/vcf/`. A population map for these files can be found in `data/popmap.txt`.
+VCF files for ECB empirical data are too large for GitHub and will be uploaded to a separate repository upon publication.
 
 ## Figures
 
