@@ -12,7 +12,7 @@ VCF files for ECB empirical data are too large for GitHub and will be uploaded t
 ## Figures
 
 ### Figure 1
-To generate Figure 1, run the R script `Figures/`
+To generate Figure 1, run the R scripts `Figures/plot_sfs.R`, `Figures/plot_2d_sfs_unfolded.R`, and `Figures/plot_residuals.R`.
 
 ### Figure 2
 To generate Figure 2, run the R script `Figures/Fig1SFS.R` 
@@ -21,7 +21,7 @@ To generate Figure 2, run the R script `Figures/Fig1SFS.R`
 To generate Figures 3 and 4, run the R script `Figures/power.R`
 
 ## Figure 5
-To generate Figure 5, run the R script `Figures/`
+To generate Figure 5, run the R script `Figures/plot_1DSFS_emp.R`, `Figures/plot_2DSFS_emp.R`, `Figures/plot_residuals_emp.R`, and `Figures/manhattan.R`.
 
 ## Figure 6
 To generate Figure 6, run the R script `Figures/fst_T2D_emp.R`
