@@ -1,4 +1,9 @@
 .DS_Store
-
 .DS_Store
 .DS_Store
+slim_sims/
+slim_vcfs/
+vcf_pruned/
+data/
+sim_likelihood_calcs/
+scripts/ECB_allPruned.vcf.gz

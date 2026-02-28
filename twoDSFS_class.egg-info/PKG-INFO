@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: twoDSFS_class
+Version: 0.0
+Summary: Composite likelihood inference of genomic divergence using the joint SFS
+Home-page: NA
+Author: Alejandro Calderon
+Author-email: alejocbx@gmail.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: summary
