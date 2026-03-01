@@ -20,10 +20,10 @@ To generate Figure 2, run the R script `Figures/Fig1SFS.R`
 ### Figures 3 and 4
 To generate Figures 3 and 4, run the R script `Figures/power.R`
 
-## Figure 5
-To generate Figure 5, run the R script `Figures/plot_1DSFS_emp.R`, `Figures/plot_2DSFS_emp.R`, `Figures/plot_residuals_emp.R`, and `Figures/manhattan.R`.
+### Figure 5
+To generate Figure 5, run the R scripts `Figures/plot_1DSFS_emp.R`, `Figures/plot_2DSFS_emp.R`, `Figures/plot_residuals_emp.R`, and `Figures/manhattan.R`.
 
-## Figure 6
+### Figure 6
 To generate Figure 6, run the R script `Figures/fst_T2D_emp.R`
 
 
